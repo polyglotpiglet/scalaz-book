@@ -4,6 +4,16 @@ import Stream._
 import scala.language.postfixOps
 
 sealed trait Stream[+A] {
+
+  def append[B >: A](s: => Stream[B]): Stream[B] =
+    this.foldRight(s)((h,cl) => cons(h, cl))
+
+  def filter(f: A => Boolean): Stream[A] =
+    this.foldRight(empty[A])((h, cl) => if (f(h)) cons(h, cl.filter(f)) else cl.filter(f))
+
+  def map[B](f: A => B): Stream[B] =
+    this.foldRight(empty[B])((a, cl) => cons(f(a), cl))
+
   def forAll(f: A => Boolean): Boolean = this match {
     case Empty => true
     case Cons(h, t) => f(h()) && t().forAll(f)
@@ -28,9 +38,8 @@ sealed trait Stream[+A] {
     case Cons(h, tail) => cons(h(), tail().take(n -1))
   }
 
-  // this doesnt need the oh param... why?
   def headOption: Option[A] =
-    foldRight[Option[A]](None)((h, oh) => oh.orElse(Some(h)))
+    foldRight[Option[A]](None)((h, _) => Some(h))
 
   def headOption2: Option[A] = this match {
     case Empty => None
