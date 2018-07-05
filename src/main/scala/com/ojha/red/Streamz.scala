@@ -12,8 +12,8 @@ sealed trait Stream[+A] {
   def filter(f: A => Boolean): Stream[A] =
     this.foldRight(empty[A])((h, cl) => if (f(h)) cons(h, cl.filter(f)) else cl.filter(f))
 
-  //  def map[B](f: A => B): Stream[B] =
-  //    this.foldRight(empty[B])((a, cl) => cons(f(a), cl))
+  def mapViaFoldRight[B](f: A => B): Stream[B] =
+    this.foldRight(empty[B])((a, cl) => cons(f(a), cl))
 
   def map[B](f: A => B): Stream[B] = unfold[B, Stream[A]](this) {
     case Empty => None
@@ -25,27 +25,18 @@ sealed trait Stream[+A] {
     case Cons(h, t) => f(h()) && t().forAll(f)
   }
 
-  //  def takeWhile(p: A => Boolean): Stream[A] =
-  //    this.foldRight[Stream[A]](Empty)((h, cl) => if (p(h)) cons(h, cl) else cl)
+  def takeWhileViaFold(p: A => Boolean): Stream[A] =
+    this.foldRight[Stream[A]](Empty)((h, cl) => if (p(h)) cons(h, cl) else cl)
 
   def takeWhile(p: A => Boolean): Stream[A] = unfold(this) {
     case Cons(h, t) if p(h()) => Some((h(), t()))
     case _ => None
   }
 
-  // cant handle invalid case with non zero n on empty
-  // cant handle large inputs
   def drop(n: Int): Stream[A] = this match {
     case x if n == 0 => x
     case Cons(_, t) => t().drop(n - 1)
   }
-
-  // doesnt handle cal/ing non zero take on empty stream
-  // cant handle large inputs
-  //  def take(n: Int): Stream[A] = this match {
-  //    case _ if n == 0 => Empty
-  //    case Cons(h, tail) => cons(h(), tail().take(n - 1))
-  //  }
 
   def take(n: Int): Stream[A] = unfold((this, 0)) {
     case (Cons(h, t), i) if i < n => Some((h(), (t(), i + 1)))
@@ -131,10 +122,10 @@ object Stream {
     case _ => cons(as.head, apply(as.tail: _*))
   }
 
-  //  def constant[A](a: A): Stream[A] = {
-  //    lazy val s: Stream[A] = Stream.cons(a, s)
-  //    s
-  //  }
+  def constantWithoutUnfold[A](a: A): Stream[A] = {
+    lazy val s: Stream[A] = Stream.cons(a, s)
+    s
+  }
 
   def constant[A](a: A): Stream[A] = unfold(a)(_ => Some(a, a))
 
