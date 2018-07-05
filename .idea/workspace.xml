@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a891a08c-e595-4a67-a5c4-9344e9aa0021" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ojha/red/Streamz.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ojha/red/Streamz.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/com/ojha/red/StreamSpec.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/com/ojha/red/StreamSpec.scala" afterDir="false" />
+    <list default="true" id="372b7750-19fd-456f-b9f3-f0d9934a1772" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/hydra.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/com/ojha/red/Chapter5.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/scala/com/ojha/Chapter3Spec.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/scala/com/ojha/red/CatListTest.scala" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/sbt__com_github_mpilquist_simulacrum_2_12_0_12_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_github_mpilquist_simulacrum_2_12_0_12_0_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_12_1_0_6_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_12_1_0_6_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_12_6_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_12_6_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_12_6_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_12_6_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalactic_scalactic_2_12_3_0_5_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalactic_scalactic_2_12_3_0_5_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalatest_scalatest_2_12_3_0_5_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalatest_scalatest_2_12_3_0_5_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalaz_scalaz_core_2_12_7_2_22_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalaz_scalaz_core_2_12_7_2_22_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_typelevel_macro_compat_2_12_1_1_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_typelevel_macro_compat_2_12_1_1_1_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/scalaz-book-build.iml" afterPath="$PROJECT_DIR$/.idea/modules/scalaz-book-build.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/scalaz-book.iml" afterPath="$PROJECT_DIR$/.idea/modules/scalaz-book.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sbt.xml" afterPath="$PROJECT_DIR$/.idea/sbt.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.sbt" afterPath="$PROJECT_DIR$/build.sbt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/com/ojha/red/Streamz.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/ojha/red/Streamz.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/com/ojha/red/StreamSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/ojha/red/StreamSpec.scala" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
     <ignored path="$PROJECT_DIR$/project/target/" />
@@ -27,14 +43,24 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="StreamSpec.scala" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/scala/com/ojha/red/StreamSpec.scala">
+          <file leaf-file-name="Streamz.scala" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/scala/com/ojha/red/Streamz.scala">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="181">
-                  <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+                <state relative-caret-position="210">
+                  <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
                   <folding>
-                    <element signature="e#738#1297#0" />
+                    <element signature="e#22#50#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="OutcomeOf.scala" pinned="false" current-in-tab="false">
+            <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalatest/scalatest_2.12/srcs/scalatest_2.12-3.0.5-sources.jar!/org/scalatest/OutcomeOf.scala">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="311">
+                  <caret line="84" column="6" lean-forward="false" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -43,14 +69,12 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="Streamz.scala" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/scala/com/ojha/red/Streamz.scala">
+          <file leaf-file-name="StreamSpec.scala" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/scala/com/ojha/red/StreamSpec.scala">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="40" selection-start-line="40" selection-end-line="40" />
-                  <folding>
-                    <element signature="e#22#37#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="153">
+                  <caret line="226" column="4" lean-forward="false" selection-start-line="226" selection-start-column="4" selection-end-line="226" selection-end-column="4" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -59,52 +83,55 @@
       </split-second>
     </splitter>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
-    <option name="projectSyncType">
-      <map>
-        <entry key="$USER_HOME$/devoxxpl2018/lab2/measure/lab2" value="PREVIEW" />
-        <entry key="$USER_HOME$/devoxxpl2018/measure/lab1" value="PREVIEW" />
-      </map>
+    <option name="externalProjectsViewState">
+      <projects_view />
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/com/ojha/ExecutionMain.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/ojha/Chapter2Main.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/ojha/Chapter3Main.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/com/ojha/Chapter3Spec.scala" />
-        <option value="$PROJECT_DIR$/build.sbt" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/ojha/Chapter4Main.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/ojha/red/Chapter5.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/com/ojha/red/CatListTest.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/com/ojha/red/Streamz.scala" />
+        <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/test/scala/com/ojha/red/StreamSpec.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/ojha/red/Streamz.scala" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="67" />
-    <option name="width" value="1717" />
-    <option name="height" value="875" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="873" />
+  </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,29 +193,19 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="ojha" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scalaz-book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scalaz-book" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="ojha" type="462c0819:PsiDirectoryNode" />
               <item name="red" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scalaz-book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v5.11.1/bin/node" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -203,10 +220,101 @@
     </option>
   </component>
   <component name="RunManager" selected="ScalaTest.StreamSpec">
+    <configuration name="StreamSpec" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="scalaz-book" />
+      <setting name="path" value="com.ojha.red.StreamSpec" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+    </configuration>
+    <configuration name="StreamSpec.startsWith must is false and left is shorter" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="scalaz-book" />
+      <setting name="path" value="com.ojha.red.StreamSpec" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="startsWith must is false and left is shorter" />
+      <setting name="testKind" value="Test name" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+    </configuration>
+    <configuration name="StreamSpec.startsWith must is true and left is longer" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="scalaz-book" />
+      <setting name="path" value="com.ojha.red.StreamSpec" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="startsWith must is true and left is longer" />
+      <setting name="testKind" value="Test name" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+    </configuration>
+    <configuration name="StreamSpec.tails must can get all tails" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="scalaz-book" />
+      <setting name="path" value="com.ojha.red.StreamSpec" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="tails must can get all tails" />
+      <setting name="testKind" value="Test name" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" />
@@ -215,87 +323,31 @@
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
+      <envs />
       <patterns />
     </configuration>
-    <configuration name="CatListTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <module name="scalaz-book" />
-      <setting name="path" value="com.ojha.red.CatListTest" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <envs />
-      <setting name="testKind" value="Class" />
-      <setting name="path" value="com.ojha.red.CatListTest" />
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <configuration name="StreamSpec" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <module name="scalaz-book" />
-      <setting name="path" value="com.ojha.red.StreamSpec" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <envs />
-      <setting name="testKind" value="Class" />
-      <setting name="path" value="com.ojha.red.StreamSpec" />
-    </configuration>
-    <configuration name="StreamSpec.A stream headOption must return None for Nil&#10;A stream headOption must return head for unit stream&#10;A stream headOption must return head twice only evaluates expression once&#10;A stream headOption must A stream toList must return Nil for Empty" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <module name="scalaz-book" />
-      <setting name="path" value="com.ojha.red.StreamSpec" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <envs />
-      <setting name="testKind" value="Test name" />
-      <setting name="path" value="com.ojha.red.StreamSpec" />
-      <setting name="testName" value="A stream headOption must return None for Nil&#10;A stream headOption must return head for unit stream&#10;A stream headOption must return head twice only evaluates expression once&#10;A stream headOption must A stream toList must return Nil for Empty" />
-    </configuration>
-    <configuration name="StreamSpec.forAll must work for non empty stream&#10;forAll must always returns true for Empty stream&#10;forAll must map must work for non empty stream&#10;forAll must map must always returns empty for Empty stream" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <module name="scalaz-book" />
-      <setting name="path" value="com.ojha.red.StreamSpec" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <envs />
-      <setting name="testKind" value="Test name" />
-      <setting name="path" value="com.ojha.red.StreamSpec" />
-      <setting name="testName" value="forAll must work for non empty stream&#10;forAll must always returns true for Empty stream&#10;forAll must map must work for non empty stream&#10;forAll must map must always returns empty for Empty stream" />
-    </configuration>
-    <configuration name="StreamSpec.map must work for non empty stream&#10;map must always returns empty for Empty stream" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <module name="scalaz-book" />
-      <setting name="path" value="com.ojha.red.StreamSpec" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <envs />
-      <setting name="testKind" value="Test name" />
-      <setting name="path" value="com.ojha.red.StreamSpec" />
-      <setting name="testName" value="map must work for non empty stream&#10;map must always returns empty for Empty stream" />
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
@@ -306,35 +358,37 @@
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" />
+      <envs />
       <properties />
       <listeners />
     </configuration>
-    <list>
-      <item itemvalue="ScalaTest.CatListTest" />
-      <item itemvalue="ScalaTest.StreamSpec" />
-      <item itemvalue="ScalaTest.StreamSpec.A stream headOption must return None for Nil&#10;A stream headOption must return head for unit stream&#10;A stream headOption must return head twice only evaluates expression once&#10;A stream headOption must A stream toList must return Nil for Empty" />
-      <item itemvalue="ScalaTest.StreamSpec.forAll must work for non empty stream&#10;forAll must always returns true for Empty stream&#10;forAll must map must work for non empty stream&#10;forAll must map must always returns empty for Empty stream" />
-      <item itemvalue="ScalaTest.StreamSpec.map must work for non empty stream&#10;map must always returns empty for Empty stream" />
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="ScalaTest.StreamSpec" />
+      <item index="1" class="java.lang.String" itemvalue="ScalaTest.StreamSpec.tails must can get all tails" />
+      <item index="2" class="java.lang.String" itemvalue="ScalaTest.StreamSpec.startsWith must is false and left is shorter" />
+      <item index="3" class="java.lang.String" itemvalue="ScalaTest.StreamSpec.startsWith must is true and left is longer" />
     </list>
     <recent_temporary>
-      <list>
-        <item itemvalue="ScalaTest.StreamSpec" />
-        <item itemvalue="ScalaTest.StreamSpec.map must work for non empty stream&#10;map must always returns empty for Empty stream" />
-        <item itemvalue="ScalaTest.StreamSpec.forAll must work for non empty stream&#10;forAll must always returns true for Empty stream&#10;forAll must map must work for non empty stream&#10;forAll must map must always returns empty for Empty stream" />
-        <item itemvalue="ScalaTest.StreamSpec.A stream headOption must return None for Nil&#10;A stream headOption must return head for unit stream&#10;A stream headOption must return head twice only evaluates expression once&#10;A stream headOption must A stream toList must return Nil for Empty" />
-        <item itemvalue="ScalaTest.CatListTest" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="ScalaTest.StreamSpec" />
+        <item index="1" class="java.lang.String" itemvalue="ScalaTest.StreamSpec.startsWith must is true and left is longer" />
+        <item index="2" class="java.lang.String" itemvalue="ScalaTest.StreamSpec.startsWith must is false and left is shorter" />
+        <item index="3" class="java.lang.String" itemvalue="ScalaTest.StreamSpec.tails must can get all tails" />
       </list>
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
+    <option name="lastUpdateTimestamp" value="1530776586750" />
     <option name="availableProjects">
       <map>
         <entry>
@@ -359,224 +413,162 @@
         </entry>
       </map>
     </option>
-    <option name="modificationStamps">
-      <map>
-        <entry key="$PROJECT_DIR$" value="3060891559000" />
-        <entry key="$PROJECT_DIR$/build.sbt" value="3098623961" />
-        <entry key="$PROJECT_DIR$/project/build.properties" value="2096222171" />
-      </map>
-    </option>
-    <option name="projectSyncType">
-      <map>
-        <entry key="$USER_HOME$/Documents/polyglotpiglet/scassandra-server" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
-      </map>
+    <option name="externalProjectsViewState">
+      <projects_view />
     </option>
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a891a08c-e595-4a67-a5c4-9344e9aa0021" name="Default" comment="" />
-      <created>1530294646606</created>
+      <changelist id="372b7750-19fd-456f-b9f3-f0d9934a1772" name="Default" comment="" />
+      <created>1530775868448</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1530294646606</updated>
+      <updated>1530775868448</updated>
+      <workItem from="1530775885597" duration="11192000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StreamSpec - 2018.07.05 at 06h 28m 20s.xml">
+    <history-entry file="StreamSpec - 2018.07.05 at 13h 32m 06s.xml">
       <configuration name="StreamSpec" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="StreamSpec - 2018.07.05 at 06h 28m 26s.xml">
+    <history-entry file="StreamSpec - 2018.07.05 at 17h 35m 08s.xml">
       <configuration name="StreamSpec" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="StreamSpec - 2018.07.05 at 06h 30m 55s.xml">
+    <history-entry file="StreamSpec - 2018.07.05 at 21h 19m 47s.xml">
       <configuration name="StreamSpec" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="StreamSpec - 2018.07.05 at 06h 34m 05s.xml">
+    <history-entry file="StreamSpec - 2018.07.05 at 21h 29m 18s.xml">
       <configuration name="StreamSpec" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="StreamSpec - 2018.07.05 at 06h 35m 05s.xml">
+    <history-entry file="StreamSpec - 2018.07.05 at 21h 31m 26s.xml">
       <configuration name="StreamSpec" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="StreamSpec - 2018.07.05 at 06h 35m 48s.xml">
-      <configuration name="StreamSpec" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="StreamSpec_startsWith_must_is_false_and_left_is_shorter - 2018.07.05 at 21h 25m 05s.xml">
+      <configuration name="StreamSpec.startsWith must is false and left is shorter" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="StreamSpec - 2018.07.05 at 06h 36m 38s.xml">
-      <configuration name="StreamSpec" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="StreamSpec_startsWith_must_is_false_and_left_is_shorter - 2018.07.05 at 21h 26m 03s.xml">
+      <configuration name="StreamSpec.startsWith must is false and left is shorter" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="StreamSpec_map_must_work_for_non_empty_stream_map_must_always_returns_empty_for_Empty_stream - 2018.07.05 at 06h 45m 02s.xml">
-      <configuration name="StreamSpec.map must work for non empty stream&#10;map must always returns empty for Empty stream" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="StreamSpec_startsWith_must_is_true_and_left_is_longer - 2018.07.05 at 21h 27m 24s.xml">
+      <configuration name="StreamSpec.startsWith must is true and left is longer" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="StreamSpec_map_must_work_for_non_empty_stream_map_must_always_returns_empty_for_Empty_stream - 2018.07.05 at 06h 48m 07s.xml">
-      <configuration name="StreamSpec.map must work for non empty stream&#10;map must always returns empty for Empty stream" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="StreamSpec_startsWith_must_is_true_and_left_is_longer - 2018.07.05 at 21h 29m 04s.xml">
+      <configuration name="StreamSpec.startsWith must is true and left is longer" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="StreamSpec - 2018.07.05 at 06h 55m 37s.xml">
-      <configuration name="StreamSpec" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="StreamSpec_tails_must_can_get_all_tails - 2018.07.05 at 21h 19m 37s.xml">
+      <configuration name="StreamSpec.tails must can get all tails" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11192000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="sbt" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info anchor="bottom" id="Build" weight="0.32963374" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.32887402" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33110368" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
-      <window_info anchor="bottom" id="sbt-shell-toolwindow" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info id="Learn" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40384614" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32948717" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/ojha/ExecutionMain.java">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/ojha/red/Chapter5.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/ojha/Chapter2Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/ojha/Chapter2Main.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
-          <folding>
-            <element signature="e#18#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/ojha/Chapter1Main.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#18#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.6-sources.jar!/scala/collection/generic/Subtractable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalaz/scalaz-core_2.12/srcs/scalaz-core_2.12-7.2.22-sources.jar!/scalaz/syntax/FoldableSyntax.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/java/jdk1.8.0_161/src.zip!/java/time/Instant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2014">
-          <caret line="206" column="19" selection-start-line="206" selection-start-column="19" selection-end-line="206" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/ojha/Chapter3Main.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding>
-            <element signature="e#18#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.sbt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/ojha/Chapter4Main.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/com/ojha/Chapter3Spec.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
-          <folding>
-            <element signature="e#18#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/ojha/red/Chapter5.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+        <state relative-caret-position="75">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="16" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/com/ojha/red/CatListTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="35" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalatest/scalatest_2.12/srcs/scalatest_2.12-3.0.5-sources.jar!/org/scalatest/OutcomeOf.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="84" column="6" lean-forward="false" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/com/ojha/red/StreamSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding>
-            <element signature="e#738#1297#0" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="226" column="4" lean-forward="false" selection-start-line="226" selection-start-column="4" selection-end-line="226" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/ojha/red/Streamz.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="210">
+          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
           <folding>
-            <element signature="e#22#37#0" expanded="true" />
+            <element signature="e#22#50#0" expanded="true" />
           </folding>
         </state>
       </provider>

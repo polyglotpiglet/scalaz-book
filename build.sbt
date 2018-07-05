@@ -6,8 +6,8 @@ scalaVersion := "2.12.6"
 
 scalacOptions in ThisBuild ++= Seq(
   "-language:_",
-  "-Ypartial-unification",
-  "-Xfatal-warnings"
+  "-Ypartial-unification"
+//  "-Xfatal-warnings"
 )
 libraryDependencies ++= Seq(
   "com.github.mpilquist" %% "simulacrum" % "0.12.0",
