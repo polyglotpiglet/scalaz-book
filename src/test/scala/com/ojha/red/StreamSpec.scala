@@ -235,7 +235,6 @@ class StreamSpec extends WordSpec with Matchers {
     }
   }
 
-
   "tails" must {
     "can get all tails" in {
       val actual = Stream(1, 2, 3).tails.toList.map(_.toList)
