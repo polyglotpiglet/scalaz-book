@@ -1,12 +1,9 @@
-package com.ojha
+package com.ojha.scalazbook
 
-import scalaz.OptionT
-
-import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global
-
-import scalaz._, Scalaz._
-import simulacrum._
+import scala.concurrent.Future
+import scalaz.OptionT
+import scalaz.Scalaz._
 
 object Chapter2Main extends App {
   def getFromRedisSync: Option[String] = {

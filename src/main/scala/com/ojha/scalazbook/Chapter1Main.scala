@@ -1,9 +1,8 @@
-package com.ojha
+package com.ojha.scalazbook
 
-import Cat.Now
+import com.ojha.scalazbook.Cat.Now
 
-import scala.concurrent.duration._
-import scala.concurrent.{Await, ExecutionContext, Future}
+import scala.concurrent.Future
 
 trait Terminal[C[_]] {
   def read: C[String]

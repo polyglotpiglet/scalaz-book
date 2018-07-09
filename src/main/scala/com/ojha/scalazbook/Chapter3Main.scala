@@ -1,15 +1,15 @@
-package com.ojha
+package com.ojha.scalazbook
 
-import java.time.Instant
 import java.time.temporal.ChronoUnit
 
 import scala.concurrent.duration._
+import scalaz.Scalaz._
 import scalaz._
-import Scalaz._
 
 object Chapter3Main extends App {
 
   import java.time.Instant
+
   import scalaz.NonEmptyList
 
   trait Drone[F[_]] {

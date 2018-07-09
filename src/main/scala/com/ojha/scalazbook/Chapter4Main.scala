@@ -1,4 +1,4 @@
-package com.ojha
+package com.ojha.scalazbook
 
 import simulacrum.{op, typeclass}
 
@@ -71,7 +71,7 @@ object TypeClassesMain {
     override def abs(x: Double): Double = java.lang.Math.abs(x)
   }
 
-  import java.math.{ BigDecimal => BD }
+  import java.math.{BigDecimal => BD}
   implicit val NumericBD: Numeric[BD] = new Numeric[BD] {
     def plus(x: BD, y: BD): BD = x.add(y)
     def times(x: BD, y: BD): BD = x.multiply(y)
