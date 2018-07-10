@@ -57,6 +57,13 @@ class CatOptionSpec extends WordSpec with Matchers {
       CatOption.sequence(List(CatSome(1), CatSome(2))) shouldEqual CatSome(List(1,2))
       CatOption.sequence(List(CatNone, CatSome(2))) shouldEqual CatNone
     }
+
+    "have traverse" in {
+
+      CatOption.traverse(List(1,2,3))(x => CatSome(x)) shouldEqual CatSome(List(1,2,3))
+      CatOption.traverse(List(1,2,3))(x => CatNone) shouldEqual CatNone
+
+    }
   }
 
 

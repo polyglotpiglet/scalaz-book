@@ -28,19 +28,15 @@ object CatOption {
   def map2[A, B, C](a: CatOption[A], b: CatOption[B])(f: (A, B) => C): CatOption[C] =
     a flatMap (i => b.map(j => f(i, j)))
 
-  def sequence[A](a: List[CatOption[A]]): CatOption[List[A]] = {
-    val initial: CatOption[List[A]] = CatSome(List.empty[A])
+  def sequence[A](as: List[CatOption[A]]): CatOption[List[A]] =
+    traverse(as)(a => a)
 
-    a.foldLeft(initial)((b, oA) => {
-      (b, oA) match {
-        case (CatSome(ls), CatSome(i)) => CatSome(ls :+ i)
-        case _ => CatNone
-      }
-    })
+
+
+  def traverse[A, B](as: List[A])(f: A => CatOption[B]): CatOption[List[B]] = {
+    val initial: CatOption[List[B]] = CatSome(List.empty[B])
+    as.foldLeft(initial)((state, a) => map2(state, f(a))((x,y) => x :+ y))
   }
-
-
-  def traverse[A, B](a: List[A])(f: A => Option[B]): Option[List[B]]
 
 }
 
