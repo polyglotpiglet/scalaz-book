@@ -17,9 +17,11 @@ class StreamSpec extends WordSpec with Matchers {
       Stream(1, 2, 3, 4).headOption shouldEqual Some(1)
     }
 
-    //    "return head without evaluating tail" in {
-    //      Stream(1, {throw new RuntimeException; 2}).headOption shouldEqual Some(1)
-    //    }
+//    "return head without evaluating tail" in {
+//      Stream(1, {
+//        throw new RuntimeException; 2
+//      }).headOption shouldEqual Some(1)
+//    }
 
     // how to make this fail???
     "return head twice only evaluates expression once" in {
@@ -240,10 +242,31 @@ class StreamSpec extends WordSpec with Matchers {
       val actual = Stream(1, 2, 3).tails.toList.map(_.toList)
       val expected = List(List(1, 2, 3), List(2, 3), List(3))
       actual shouldEqual expected
+    }
+  }
+
+
+  "multiple higher order functions " must {
+    "be lazy for map and filter" in {
+
+      var calls = 0
+
+      def getA: Int = {
+        calls += 1
+        1
+      }
+
+      val stream = Cons(() => getA, () => Empty)
+
+      calls shouldBe 0
+
+      stream
+        .filter(_ => true)
+        .map(_.toString)
+
+      calls shouldBe 1
 
     }
-
-
   }
 
 }
