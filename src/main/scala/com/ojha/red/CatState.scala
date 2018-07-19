@@ -1,5 +1,7 @@
 package com.ojha.red
 
+import com.ojha.red.Randy._
+
 trait RNG {
   def nextInt: (Int, RNG)
 
@@ -18,28 +20,7 @@ case class SimpleRNG(seed: Long) extends RNG {
 }
 
 object RNG {
-  type Rand[+A] = RNG => (A, RNG)
 
-  def unit[A](a: A): Rand[A] = rng => (a, rng)
-
-  def map[A,B](s: Rand[A])(f: A => B): Rand[B] = rng => {
-    val (a, rng2) = s(rng)
-    (f(a), rng2)
-  }
-
-  def map2[A,B,C](ra: Rand[A], rb: Rand[B])(f: (A, B) => C): Rand[C] = rnd => {
-    val (a, stateA) = ra(rnd)
-    val (b, stateB) = rb(stateA)
-    (f(a,b), stateB)
-  }
-
-  def sequence[A](fs: List[Rand[A]]): Rand[List[A]] = rng => {
-    fs.foldLeft((List.empty[A], rng)) ((current, randA) => {
-      val (ls, state1) = current
-      val (a, state2) = randA(state1)
-      (ls :+ a, state2)
-    })
-  }
 
   def nonNegativeEven: Rand[Int] = map(nonNegativeInt)(i => i - i % 2)
 
@@ -79,5 +60,43 @@ object RNG {
       (ls :+ next, updatedState)
     })
   }
+}
+
+object Randy {
+  type Rand[+A] = RNG => (A, RNG)
+
+  def unit[A](a: A): Rand[A] = rng => (a, rng)
+
+  def both[A,B](ra: Rand[A], rb: Rand[B]): Rand[(A,B)] =
+    map2(ra, rb)((_,_))
+
+  def map[A,B](s: Rand[A])(f: A => B): Rand[B] = rng => {
+    val (a, rng2) = s(rng)
+    (f(a), rng2)
+  }
+
+  def map2[A,B,C](ra: Rand[A], rb: Rand[B])(f: (A, B) => C): Rand[C] = rnd => {
+    val (a, stateA) = ra(rnd)
+    val (b, stateB) = rb(stateA)
+    (f(a,b), stateB)
+  }
+
+  def sequence[A](fs: List[Rand[A]]): Rand[List[A]] = rng => {
+    fs.foldLeft((List.empty[A], rng)) ((current, randA) => {
+      val (ls, state1) = current
+      val (a, state2) = randA(state1)
+      (ls :+ a, state2)
+    })
+  }
+
+  def flatMap[A,B](f: Rand[A])(g: A => Rand[B]): Rand[B] =
+    rng => {
+      val (a, s1) = f(rng)
+      g(a)(s1)
+    }
+
+
+//  def sequence[A](fs: List[Rand[A]]): Rand[List[A]] =
+//    fs.foldRight(unit(List[A]()))((f, acc) => map2(f, acc)(_ :: _))
 }
 

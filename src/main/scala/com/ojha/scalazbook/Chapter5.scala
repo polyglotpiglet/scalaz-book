@@ -3,13 +3,20 @@ package com.ojha.scalazbook
 
 import scalaz.Scalaz._
 import scalaz._
+import TradeTemplate._
 
-object AppendableThings {
-  //
-  //  def meow(templates: List[TradeTemplate]) = {
-  //    val zero = Monoid[TradeTemplate].zero
-  //    templates.foldLeft(zero)(_ |+| _)
-  //  }
+object AppendableThings extends App {
+
+  //    def meow(templates: List[TradeTemplate]) = {
+  //      val zero = Monoid[TradeTemplate].zero
+  //      templates.foldLeft(zero)(_ |+| _)
+  //    }
+
+  val r = Option[Currency](EUR) |+| Option[Currency](USD)
+  //  val r = Option(1) |+| Option(2)
+  val meow = 'm' |-> 'u'
+  println(meow)
+
 }
 
 sealed abstract class Currency
