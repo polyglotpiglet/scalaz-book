@@ -2,6 +2,8 @@ package com.ojha.red
 
 import java.util.concurrent._
 
+import com.ojha.red.Par.Par
+
 
 object Par {
 
@@ -74,10 +76,13 @@ object Par {
     map2(pa, unit(()))((a, _) => f(a))
 
   def parFilter[A](as: List[A])(f: A => Boolean): Par[List[A]] = {
-    val pars: List[Par[List[A]]] = as.map(i => asyncF(a => if (f(a)) List(a) else List())(i))
+    val pars: List[Par[List[A]]] = as.map(asyncF((a: A) => if (f(a)) List(a) else List()))
     val ps: Par[List[List[A]]] = sequence(pars)
     map(ps)(_.flatten)
   }
+
+  def equal[A](e: ExecutorService)(p: Par[A], p2: Par[A]): Boolean =
+    p(e).get == p2(e).get
 
 }
 
@@ -104,5 +109,55 @@ object ParSequence extends App {
 
 
 object Paragraphs extends App {
-  
+  val es: ExecutorService = Executors.newFixedThreadPool(2)
+
+  val paragraph1 = "I am a cat. You are a dog."
+  val paragraph2 = "I love cats. Ruby and Bella rock."
+
+  val input = List(paragraph1, paragraph2)
+
+  val parInput: Par[List[Int]] = Par.parMap(input)(par => par.split(" ").length)
+  val result: Future[List[Int]] = parInput(es)
+  println(result.get())
 }
+
+
+object Deadlock extends App {
+  import Par._
+  val a = lazyUnit(42 + 1)
+  val es = Executors.newFixedThreadPool(1, new CatThreadFactory())
+  println(Par.equal(es)(a, fork(a)))
+
+}
+
+
+import java.util.concurrent.ThreadFactory
+
+class CatThreadFactory extends ThreadFactory {
+  override def newThread(r: Runnable) = new Thread(r, "Meow")
+}
+
+/*
+
+ map(y)(id) == y
+
+ map(y)(g) = g(y) = x  (1)
+
+ map(x)(f) = f(x)
+ map(map(y)(g))(f) = f(g(y))
+
+ (f compose g) = h
+
+ map(map(y)(g))(f) = h(y)
+
+      (1)
+ map(map(y)(g))(f) = map(y)(h)
+
+
+
+ map(map(y)(g))(f) == map(y)(f compose g)
+
+
+
+ */
+
