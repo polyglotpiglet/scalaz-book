@@ -50,20 +50,20 @@ class CatStateSpec extends WordSpec with Matchers{
 
     "non negative less than" in {
 
-      val rand = Randy.nonNegativeLessThan(6)
-      val (actual, _) = rand(rng)
-      actual should be >= 0
-      actual should be < 6
-
-      val seq = Randy.sequence(List.fill(20)(rand))
-      val (randoms, _) = seq(rng)
-
-      println(randoms.mkString(" "))
-
-      randoms.foreach(r => {
-        r should be >=0
-        r should be < 6
-      })
+//      val rand = Randy.nonNegativeLessThan(6)
+//      val (actual, _) = rand(rng)
+//      actual should be >= 0
+//      actual should be < 6
+//
+//      val seq = Randy.sequence(List.fill(20)(rand))
+//      val (randoms, _) = seq(rng)
+//
+//      println(randoms.mkString(" "))
+//
+//      randoms.foreach(r => {
+//        r should be >=0
+//        r should be < 6
+//      })
 
 
 
