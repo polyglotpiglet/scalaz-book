@@ -2,6 +2,7 @@ package com.ojha.red
 
 import java.util.concurrent._
 
+import com.google.common.util.concurrent.ThreadFactoryBuilder
 import com.ojha.red.Par.Par
 
 
@@ -49,6 +50,7 @@ object Par {
     UnitFuture(f(a.get, b.get))
   }
 
+  def delay[A](a: => Par[A]): Par[A] = es => a(es)
 
   def fork[A](a: => Par[A]): Par[A] = es => es.submit(new Callable[A] {
     def call: A = a(es).get
@@ -64,8 +66,12 @@ object Par {
 
   def sequence[A](ps: List[Par[A]]): Par[List[A]] = es => UnitFuture(ps.map(a => a(es)).map(_.get))
 
-  def sequence_simple[A](l: List[Par[A]]): Par[List[A]] =
+  def sequence2[A](l: List[Par[A]]): Par[List[A]] =
     l.foldRight[Par[List[A]]](unit(List()))((h, t) => map2(h, t)(_ :: _))
+
+//  def sequenceBalanced[A](l: List[Par[A]]): Par[List[A]] = {
+//
+//  }
 
   def parMap[A, B](ps: List[A])(f: A => B): Par[List[B]] = fork {
     val fbs: List[Par[B]] = ps.map(asyncF(f))
@@ -86,25 +92,82 @@ object Par {
 
 }
 
-object ParSequence extends App {
-  val es: ExecutorService = Executors.newFixedThreadPool(2)
 
-  val one = Par.fork(Par.unit(get(1)))
-  val two = Par.fork(Par.unit(get(2)))
+object ParDifferentSequences extends App {
+  val namedThreadFactory = new ThreadFactoryBuilder()
+    .setNameFormat("es-thread-%d")
+    .build()
 
-  // mine
-  val sequenced = Par.sequence(List(one, two))
+  val es: ExecutorService = Executors.newFixedThreadPool(2, namedThreadFactory)
 
-  // theirs
-  // val sequenced = Par.sequence_simple(List(one, two))
+  val one = Par.lazyUnit(get(1))
+  val two  = Par.lazyUnit(get(2))
+  val three  = Par.lazyUnit(get(3))
+  val four  = Par.lazyUnit(get(4))
+  val five  = Par.lazyUnit(get(5))
+  val six  = Par.lazyUnit(get(6))
+
+  val sequenced = Par.sequence2(List(one, two, three, four, five, six))
+
   val res = Par.run(es)(sequenced)
   println(res.get)
 
   def get(i: Int): Int = {
-    println("Getting " + i)
+    val thread = Thread.currentThread().getName
+    val time1 = System.currentTimeMillis() / 100 % 1000
+    println(s"$thread | $time1 | Starting | $i ")
+    Thread.sleep(i * 3000)
+    val time2 = System.currentTimeMillis() / 100 %1000
+    println(s"$thread | $time2 | Finishing | $i ")
+    println("-----------------------------------------------")
+    i
+  }
+
+  es.shutdown()
+}
+
+
+object ParSequence extends App {
+  val namedThreadFactory = new ThreadFactoryBuilder()
+    .setNameFormat("es-thread-%d")
+    .build()
+
+  val es: ExecutorService = Executors.newFixedThreadPool(2, namedThreadFactory)
+
+//  val one = Par.fork(Par.unit(get(1)))
+//  val two = Par.fork(Par.unit(get(2)))
+
+  val one = Par.lazyUnit(get(1))
+  val two  = Par.lazyUnit(get(2))
+
+//  val one = Par.unit(get(1))
+//  val two  = Par.unit(get(2))
+
+  val sequenced = Par.sequence(List(one, two))
+
+  val res = Par.run(es)(sequenced)
+  println(res.get)
+
+  def get(i: Int): Int = {
+    val thread = Thread.currentThread().getName;
+    println(thread + ": Getting " + i)
     Thread.sleep(5000)
     i
   }
+}
+
+object Doodle extends App {
+
+  def sum(is: List[Int]): Par[Int] =  is match {
+    case Nil => Par.unit(0)
+    case x::Nil => Par.lazyUnit(x)
+    case _ => {
+      val (l, r) =  is.splitAt(is.size / 2)
+      Par.map2(sum(l), sum(r))(_ + _)
+    }
+
+  }
+
 }
 
 
@@ -121,12 +184,12 @@ object Paragraphs extends App {
   println(result.get())
 }
 
-
 object Deadlock extends App {
   import Par._
   val a = lazyUnit(42 + 1)
   val es = Executors.newFixedThreadPool(1, new CatThreadFactory())
-  println(Par.equal(es)(a, fork(a)))
+  val areEqual: Boolean = Par.equal(es)(a, fork(a))
+  println(areEqual)
 
 }
 

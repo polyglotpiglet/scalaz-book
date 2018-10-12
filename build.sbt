@@ -29,6 +29,8 @@ libraryDependencies ++= Seq(
 
 libraryDependencies += "org.typelevel" %% "cats-effect" % "1.0.0-RC2"
 
+// https://mvnrepository.com/artifact/com.google.guava/guava
+libraryDependencies += "com.google.guava" % "guava" % "12.0"
 
 libraryDependencies += "xyz.driver" %% "spray-json-derivation" % "0.4.1"
 
