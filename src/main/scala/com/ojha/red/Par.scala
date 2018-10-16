@@ -52,9 +52,12 @@ object Par {
 
   def delay[A](a: => Par[A]): Par[A] = es => a(es)
 
-  def fork[A](a: => Par[A]): Par[A] = es => es.submit(new Callable[A] {
-    def call: A = a(es).get
-  })
+  def fork[A](a: => Par[A]): Par[A] = es => {
+    println(Thread.currentThread().getName)
+    es.submit(new Callable[A] {
+      def call: A = a(es).get
+    })
+  }
 
   def unit[A](a: A): Par[A] = (_: ExecutorService) => UnitFuture(a)
 
@@ -64,7 +67,10 @@ object Par {
 
   def asyncF[A, B](f: A => B): A => Par[B] = a => lazyUnit(f(a))
 
-  def sequence[A](ps: List[Par[A]]): Par[List[A]] = es => UnitFuture(ps.map(a => a(es)).map(_.get))
+  def sequence[A](ps: List[Par[A]]): Par[List[A]] = es => {
+//    println(Thread.currentThread().getName)
+    UnitFuture(ps.map(a => a(es)).map(_.get))
+  }
 
   def sequence2[A](l: List[Par[A]]): Par[List[A]] =
     l.foldRight[Par[List[A]]](unit(List()))((h, t) => map2(h, t)(_ :: _))
@@ -126,6 +132,26 @@ object ParDifferentSequences extends App {
   es.shutdown()
 }
 
+object BadMySequence extends App {
+
+  val namedThreadFactory = new ThreadFactoryBuilder()
+    .setNameFormat("noodle-%d")
+    .build()
+
+  val es: ExecutorService = Executors.newFixedThreadPool(2, namedThreadFactory)
+
+  val one = Par.lazyUnit(get(1))
+  val two  = Par.lazyUnit(get(2))
+
+  val sequenced = Par.fork(Par.fork(Par.sequence2(List(one, two))))
+
+  val res = Par.run(es)(sequenced)
+  println(res.get)
+  es.shutdown()
+
+  def get(i: Int): Int = i
+
+}
 
 object ParSequence extends App {
   val namedThreadFactory = new ThreadFactoryBuilder()
@@ -156,44 +182,6 @@ object ParSequence extends App {
   }
 }
 
-object Doodle extends App {
-
-  def sum(is: List[Int]): Par[Int] =  is match {
-    case Nil => Par.unit(0)
-    case x::Nil => Par.lazyUnit(x)
-    case _ => {
-      val (l, r) =  is.splitAt(is.size / 2)
-      Par.map2(sum(l), sum(r))(_ + _)
-    }
-
-  }
-
-}
-
-
-object Paragraphs extends App {
-  val es: ExecutorService = Executors.newFixedThreadPool(2)
-
-  val paragraph1 = "I am a cat. You are a dog."
-  val paragraph2 = "I love cats. Ruby and Bella rock."
-
-  val input = List(paragraph1, paragraph2)
-
-  val parInput: Par[List[Int]] = Par.parMap(input)(par => par.split(" ").length)
-  val result: Future[List[Int]] = parInput(es)
-  println(result.get())
-}
-
-object Deadlock extends App {
-  import Par._
-  val a = lazyUnit(42 + 1)
-  val es = Executors.newFixedThreadPool(1, new CatThreadFactory())
-  val areEqual: Boolean = Par.equal(es)(a, fork(a))
-  println(areEqual)
-
-}
-
-
 import java.util.concurrent.ThreadFactory
 
 class CatThreadFactory extends ThreadFactory {
@@ -204,23 +192,18 @@ class CatThreadFactory extends ThreadFactory {
 
  map(y)(id) == y
 
- map(y)(g) = g(y) = x  (1)
+ map(y)(g) = g(y) = x                                <- (1)
 
  map(x)(f) = f(x)
- map(map(y)(g))(f) = f(g(y))
+ map(map(y)(g))(f) = f(g(y))                         <- using (1)
 
- (f compose g) = h
+ (f compose g) = h                                   <- (2)
 
  map(map(y)(g))(f) = h(y)
 
-      (1)
- map(map(y)(g))(f) = map(y)(h)
+ map(map(y)(g))(f) = map(y)(h)                       <- using (1)
 
-
-
- map(map(y)(g))(f) == map(y)(f compose g)
-
-
+ map(map(y)(g))(f) == map(y)(f compose g)            <- using(2)
 
  */
 
